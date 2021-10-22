@@ -1,0 +1,106 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --border-color: #ccc;
+    --primary-color: #3fd0d4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px !important;   
+}
+
+.margin-bottom-160 {
+    margin-bottom: 160px !important;
+}
+
+.margin-top-155 {
+    margin-top: 155px !important;
+}
+
+.white-text {
+    color: var(--white-color) !important;
+}
+
+.slider__active {
+    color: var(--primary-color);
+}
+
+.header-top__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn ease-in 0.3s;
+    z-index: 1;
+}
+
+.modal--actived {
+    display: flex !important;
+}
+
+.header-top__modal-overlay {
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+}
+
+.header-top__modal-body {
+    width: 310px;
+    min-height: 200px;
+    margin: auto;
+    background-color: #3fd0d4;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(1);
+    }
+}
+
+
+/* Sub Option Modal */
+.sub-options__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation: fadeIn ease-in 0.3s
+}
+
+.sub-options__modal-overlay {
+    position: absolute;
+    background-color: #5cd7da;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+

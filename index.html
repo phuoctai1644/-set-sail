@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.7/dist/css/splide.min.css">
+    <title>SetSail - Travel Agency Theme</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <!-- Start header top -->
+            <div class="header-top">
+                <div class="header-top__contact">
+                    <ul class="contact__lists">
+                        <li class="contact__items">    
+                            <a href="mailto:setsail@qude.com">
+                                <i class="contact__lists-icon ti-email"></i>
+                                setsail@qude.com
+                            </a>
+                        </li>
+                        <li class="contact__items">
+                            <a href="tel:1 562 867 5309">
+                                <i class="contact__lists-icon ti-headphone-alt"></i>
+                                1 562 867 5309
+                            </a>
+                        </li>
+                        <li class="contact__items">
+                            <a href="https://goo.gl/maps/41u9SnWfyfrdNsX98" target="_blank">
+                                <i class="contact__lists-icon ti-location-pin"></i>
+                                Broadway & Morris St, New York
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="contact__socials">
+                        <ul class="social__lists">
+                            <li class="social__items">
+                                <a href="https://twitter.com/QodeInteractive" target="_blank">
+                                    <i class="social__lists-icon ti-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social__items">
+                                <a href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+                                    <i class="social__lists-icon ti-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="social__items">
+                                <a href="https://www.facebook.com/QodeInteractive/" target="_blank">
+                                    <i class="social__lists-icon ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social__items">
+                                <a href="https://www.instagram.com/qodeinteractive/" target="_blank">
+                                    <i class="social__lists-icon ti-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header-top__auth">
+                    <div class="default-language">
+                        <p>English</p>
+                        <i class="arrow-down-icon ti-angle-down"></i>
+                        <ul class="language__lists">
+                            <li class="language__item">
+                                <a href="#" class="language__link">French</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="language__item">
+                                <a href="#" class="language__link">German</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="language__item">
+                                <a href="#" class="language__link">Italian</a>
+                                <div class="line"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="auth-container">
+                        <div class="auth-wrap">
+                            <i class="auth-icon ti-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="header-top__modal">
+                        <div class="header-top__modal-overlay"></div>
+                        <div class="header-top__modal-body">
+                            <!-- Login Form -->
+                            <!-- Active => add class 'auth-form__container--actived' -->
+                            <div class="auth-form__sign-in-container auth-form__container--actived">
+                                <ul class="auth-form__lists">
+                                    <li class="auth-form__item auth-form__item--actived">LOGIN</li>
+                                    <li class="auth-form__item" onclick="showRegisterModal()">REGISTER</li>
+                                </ul>
+
+                                <div class="auth-form__content">
+                                    <div class="auth-form__wrapper">
+                                        <h4 class="auth-form__header">Sign In Here!</h4>
+                                        <span class="auth-form__msg">Log into your account in just few simple steps.</span>
+    
+                                        <form action="" class="auth-form__main">
+                                            <div class="auth-form__username">
+                                                <div class="auth-form__icon-wrap">
+                                                    <i class="auth-form__icon ti-user"></i>
+                                                </div>
+                                                <input type="text" placeholder="User Name">
+                                            </div>
+                                            <div class="auth-form__password">
+                                                <div class="auth-form__icon-wrap">
+                                                    <i class="auth-form__icon ti-lock"></i>
+                                                </div>
+                                                <input type="password" placeholder="Password">
+                                            </div>
+                                        
+                                            <div class="auth-form__remember-wrap">
+                                                <input type="radio" id="remember">
+                                                <label for="remember">Remember me</label>
+                                            </div>
+                                            
+                                            <a href="#" class="lost-password">Lost your password?</a>
+    
+                                            <button class="auth-form__btn">SIGN IN</button>
+                                        </form>
+
+                                    </div>
+                                    <span class="auth-form__msg text-center">Sign in with Facebook or Google</span>
+                                    <ul class="auth-form__another-options">
+                                        <li class="auth-form__fb"><a href="#">FACEBOOK</a></li>
+                                        <li class="auth-form__gg"><a href="#">GOOGLE+</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Register Form -->
+                            <div class="auth-form__register-container">
+                                <ul class="auth-form__lists">
+                                    <li class="auth-form__item" onclick="showSignInModal()">LOGIN</li>
+                                    <li class="auth-form__item auth-form__item--actived">REGISTER</li>
+                                </ul>
+
+                                <div class="auth-form__content">
+                                    <div class="auth-form__wrapper margin-bottom-30">
+                                        <h4 class="auth-form__header">Register Now!</h4>
+                                        <span class="auth-form__msg">Join the SetSail community today & set up free account.</span>
+    
+                                        <form action="" class="auth-form__main">
+                                            <div class="auth-form__username">
+                                                <div class="auth-form__icon-wrap">
+                                                    <i class="auth-form__icon ti-user"></i>
+                                                </div>
+                                                <input type="text" placeholder="User Name">
+                                            </div>
+
+                                            <div class="auth-form__password">
+                                                <div class="auth-form__icon-wrap">
+                                                    <i class="auth-form__icon ti-email"></i>
+                                                </div>
+                                                <input type="email" placeholder="Email">
+                                            </div>
+                                    
+                                            <div class="auth-form__username">
+                                                <div class="auth-form__icon-wrap">
+                                                    <i class="auth-form__icon ti-lock"></i>
+                                                </div>
+                                                <input type="password" placeholder="Password">
+                                            </div>
+
+                                            <div class="auth-form__username">
+                                                <div class="auth-form__icon-wrap">
+                                                    <i class="auth-form__icon ti-lock"></i>
+                                                </div>
+                                                <input type="password" placeholder="Repeat Password">
+                                            </div>
+    
+                                            <button class="auth-form__btn">REGISTER</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tablet Header top -->
+                <div class="tablet-header">
+                    <div class="tablet-header__menu">
+                        <i class="tablet-header__menu-icon ti-menu"></i>
+                    </div>
+                    <a href="#" class="tablet-header__logo">
+                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png" alt="">
+                    </a>
+                    <div class="tablet-header-auth">
+                        <div class="auth-wrap">
+                            <i class="auth-icon ti-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End header top -->
+
+            <!-- Start header navbar -->
+            <div class="header-navbar">
+                <a href="#" class="header-navbar__logo">
+                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-sidearea.png" alt="" class="">
+                </a>
+
+                <div class="header-navbar__options">
+                    <ul class="header-navbar__lists">
+                        <li class="header-navbar__items">
+                            <p>Home</p>
+
+                            <ul class="header-navbar__sub-lists">
+                                <li><a href="#" class="header-navbar__sub-link">Travel Agency</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Winter Holidays</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Exotic Destinations</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Summer Holidays</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">City Tours</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">New Year Trips</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Destination Carousel</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Wine Tours</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Vacation Showcase</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Landing</a></li>   
+                            </ul>
+
+                            <div class="line line-blue"></div>
+                        </li>
+                        <li class="header-navbar__items">
+                            <p>Pages</p>
+
+                            <ul class="header-navbar__sub-lists">
+                                <li><a href="#" class="header-navbar__sub-link">What we offer</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Our Team</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Get in touch</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Contact us</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">FAQ Page</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Comming soon</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Error Page</a></li>
+                            </ul>
+                            
+                            <div class="line line-blue"></div>
+                        </li>
+                        <li class="header-navbar__items">
+                            <p>Destinations</p>
+
+                            <ul class="header-navbar__sub-lists">
+                                <li><a href="#" class="header-navbar__sub-link">Destination Lists</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Destination slider</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Destination item</a></li>
+                            </ul>
+
+                            <div class="line line-blue"></div>
+                        </li>
+                        <li class="header-navbar__items">
+                            <p>Tours</p>
+
+                            <ul class="header-navbar__sub-lists">
+                                <li><a href="#" class="header-navbar__sub-link">Standard List</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Gallery List</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Split List</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Tour Item</a></li>
+                            </ul>
+
+                            <div class="line line-blue"></div>
+                        </li>
+                        <li class="header-navbar__items">
+                            <p>Blog</p>
+
+                            <ul class="header-navbar__sub-lists">
+                                <li><a href="#" class="header-navbar__sub-link">Blog Masonry</a></li>
+                                <li>
+                                    <a href="#" class="header-navbar__sub-link">Blog Standard</a>
+                                    <i class="ti-angle-right header-navbar__sub-icon"></i>
+                                    <ul class="header-navbar__sub-sub-lists">
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Right Sidebar</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Left Sidebar</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Without Sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-navbar__sub-link">Post Types</a>
+                                    <i class="ti-angle-right header-navbar__sub-icon"></i>
+                                    <ul class="header-navbar__sub-sub-lists">
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Standard</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Gallery</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Link</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Quote</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Video</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Audio</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">No Sidebar</a></li>
+
+                                    </ul>
+
+                                </li>
+                            </ul>
+
+                            <div class="line line-blue"></div>
+                        </li>
+                        <li class="header-navbar__items">
+                            <p>Shop</p>
+
+                            <ul class="header-navbar__sub-lists">
+                                <li><a href="#" class="header-navbar__sub-link">Product List</a></li>
+                                <li><a href="#" class="header-navbar__sub-link">Product Single</a></li>
+                                <li>
+                                    <a href="#" class="header-navbar__sub-link">Shop Layouts</a>
+                                    <i class="ti-angle-right header-navbar__sub-icon"></i>
+                                    <ul class="header-navbar__sub-sub-lists">
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Three Columns</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Four Columns</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Full Width</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-navbar__sub-link">Shop Pages</a>
+                                    <i class="ti-angle-right header-navbar__sub-icon"></i>
+                                    <ul class="header-navbar__sub-sub-lists">
+                                        <li><a href="#" class="header-navbar__sub-sub-link">My account</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Cart</a></li>
+                                        <li><a href="#" class="header-navbar__sub-sub-link">Checkout</a></li>
+                                    </ul>
+                                </li>
+                            
+                            </ul>
+
+                            <div class="line line-blue"></div>
+                        </li>
+                        <li class="header-navbar__items">
+                            <p>Elements</p>
+                            <div class="line line-blue"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-navbar__sub-options">
+                    <div class="sub-options__item">
+                        <i class="sub-options__icon ti-shopping-cart"></i>
+                        <div class="shopping-cart-lists">
+                            <p class="shopping-cart-lists__msg">No products in the cart</p>
+                        </div>
+                    </div>
+
+                    <div class="sub-options__item" onclick="showSubOptionModal()">
+                        <i class="sub-options__icon ti-search"></i>
+
+                        <div class="sub-options__modal">
+                            <div class="sub-options__modal-overlay"></div>
+
+                            <div class="sub-options__modal-body ">
+                                <div class="sub-options__modal-wrap">
+                                    <input type="text" placeholder="Search..."> 
+                                </div>
+                                <button>FIND NOW</button>           
+                            </div>
+
+                            <!-- <div class="sub-options__modal-close">
+                                <i class="ti-close"></i>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="sub-options__item">
+                        <i class="sub-options__icon ti-layout-grid3" onclick="openSupOption()"></i>
+
+                        <!-- Show sub option menu:  sub-options__menu--actived -->
+                        <div class="sub-options__overlay" onclick="closeSupOption()"></div>
+                        <div class="sub-options__menu">
+                            <i class="sub-options__menu-icon ti-close" onclick="closeSupOption()"></i>
+                            <div class="sub-option__menu-wrap">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-sidearea.png" alt="" class="">
+                            </div>
+                            <div class="sub-option__menu-wrap">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/sidearea-img-2.png" alt="">
+                            </div>
+                            <div class="sub-option__menu-wrap">
+                                <a href="#"><img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/sidearea-img.jpg" alt=""></a>
+                            </div>
+                            <p class="sub-options__menu-msg">Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque</p>
+                            
+                            <div class="sub-options__menu-location">
+                                <h3 class="sub-options__menu-title">Find Your Destination</h3>
+                            
+                                <div class="sub-options__menu-wrap">
+                                    <input type="text" placeholder="Search..."> 
+                                    <button>
+                                        <i class="ti-search"></i>
+                                    </button>   
+                                </div>
+                            </div>
+
+                            <div class="sub-options__menu-follow">
+                                <h3 class="sub-options__menu-title">Follow Me</h3>
+                                <ul class="social-lists">
+                                    <li><a href="#">
+                                        <div class="social-lists__wrap">
+                                            <i class="ti-twitter"></i>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="social-lists__wrap">
+                                            <i class="ti-pinterest"></i>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="social-lists__wrap">
+                                            <i class="ti-facebook"></i>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">   
+                                        <div class="social-lists__wrap">
+                                            <i class="ti-instagram"></i>
+                                        </div> 
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!-- End header navbar -->
+        </header>
+
+        <!-- Start slider -->
+        <div class="slider">
+            <div class="splide">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <div class="slider__arrow-btn">
+                            <i class="slider__arrow-icon ti-angle-left"></i>
+                        </div>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <div class="slider__arrow-btn">
+                            <i class="slider__arrow-icon ti-angle-right"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="slider__wrap" style="background-image: url('./assets/img/slider/friends.jpg');">
+                                <div class="slider__status">
+                                    <h3 class="slider__sub-title">Let's go now</h3>
+                                    <h1 class="slider__main-title">Explore and travel.</h1>
+                                    <div class="slider__msg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commudo ligula eget dolor. Aenean massa.
+                                            Cum sociis Theme</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="slider__wrap" style="background-image: url('./assets/img/slider/couple.jpg');">
+                                <div class="slider__status">
+                                    <h3 class="slider__sub-title">Come with us</h3>
+                                    <h1 class="slider__main-title">Relex and Enjoy</h1>
+                                    <div class="slider__msg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commudo ligula eget dolor. Aenean massa.
+                                            Cum sociis Theme</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Start slider find travel -->
+            <div class="slider__find-travel">
+                <div class="slider__find-travel-wrap">
+                    <div class="slider__travel-where">
+                        <i class="slider__travel-icon ti-location-pin"></i>
+                        <input type="text" placeholder="Where to?">
+                    </div>
+    
+                    <div class="slider__travel-time">
+                        <i class="slider__travel-icon ti-calendar"></i>
+                        <p class="slider__travel-default">Month</p>
+                        <ul class="slider__travel-time-lists">
+                            <li>January</li>
+                            <li>February</li>
+                            <li>March</li>
+                            <li>April</li>
+                            <li>May</li>
+                            <li>June</li>
+                            <li>July</li>
+                            <li>August</li>
+                            <li>September</li>
+                            <li>October</li>
+                            <li>November</li>
+                            <li>December</li>
+                        </ul>
+                    </div>
+    
+                    <div class="slider__travel-type">
+                        <i class="slider__travel-icon ti-pin-alt"></i>
+                        <p class="slider__travel-default">Travel Type</p>
+
+                        <ul class="slider__travel-type-lists">
+                            <li>Europe</li>
+                            <li>Latest</li>
+                            <li>NY</li>
+                            <li>Poppular</li>
+                            <li>Skiing</li>
+                            <li>Trendy</li>
+                            <li>Wines</li>
+                        </ul>   
+                    </div>
+    
+                    <div class="slider__travle-find-btn">
+                        <button>FIND NOW</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End slider find travel -->
+        </div> -->
+        <!-- End Slider -->
+
+        <!-- Start content -->
+        <div class="content">
+            <!-- Start tour section -->
+            <div class="content__wrapper">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="content__status">
+                                <h3 class="content__sub-title">Choose Your</h3>
+                                <h1 class="content__main-title">Perfect Holiday</h1>
+                                <div class="content__msg">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places tour__places--circle">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://static.toiimg.com/photo/82307571/Spain.jpg?width=748&resize=4" alt="">
+                                </div>
+                                <h3 class="tour__places-name">Spain</h3>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://www.costacruises.com/content/dam/costa/inventory-assets/ports/TRG/trg-tarragona-port-1b.jpg.image.750.563.low.jpg" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Tarragona</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>5.0 Good</p>
+                                        </div>
+                                        <p class="tour__places-price">$1740</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://static.onecms.io/wp-content/uploads/sites/28/2021/06/08/madrid-spain-MADRIDTG0621.jpg" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Madrid</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>7.0 Superb</p>
+                                        </div>
+                                        <p class="tour__places-price">$1100</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://image.thanhnien.vn/1024/uploaded/thuthao/2017_01_28/1_tatj.jpg" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Barcelona</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>5.3 Good</p>
+                                        </div>
+                                        <p class="tour__places-price">$840</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://www.azamara.com/sites/default/files/heros/kaoshiung-taiwan-1800x1000.jpg" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Kaohsiung</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>8.0 Superb</p>
+                                        </div>
+                                        <p class="tour__places-price">$963</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://thetravelhack.com/wp-content/uploads/2020/03/Raohe-Night-Market-copy.jpg" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Taipei</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>5.0 Good</p>
+                                        </div>
+                                        <p class="tour__places-price">$2130</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://www.cktravels.com/wp-content/uploads/2019/05/2-1150x767.jpg" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Tainan</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>7.3 Superb</p>
+                                        </div>
+                                        <p class="tour__places-price">$999</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places tour__places--circle">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://www.befreetour.com/img/produk/taiwan-taipei-city-tour/taiwan-taipei-city-tour_3368c4d960ff770d4beacc13b865ef81e90fdf16.jpg" alt="">
+                                </div>
+                                <h3 class="tour__places-name">Taiwan</h3>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places tour__places--circle">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://withlocals-com-res.cloudinary.com/image/upload/w_412,h_400,c_fill,g_auto,q_auto,dpr_1.0,f_auto/9bfb39c7dff6df056532661f07c86c71" alt="">
+                                </div>
+                                <h3 class="tour__places-name">Bali</h3>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://pix10.agoda.net/hotelImages/7478110/-1/427eaa88e02e5875c77437c49c2dd834.jpg?s=1024x768" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Ubud</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>6.0 Good</p>
+                                        </div>
+                                        <p class="tour__places-price">$888</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://pix10.agoda.net/hotelImages/1061796/-1/391b34a306e012a97bdc130360cb3406.jpg?s=1024x768" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Seminyak</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>9.0 Superb</p>
+                                        </div>
+                                        <p class="tour__places-price">$966</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12">
+                            <div class="tour__places">
+                                <div class="tour__places-img-wrap">
+                                    <img src="https://namthanh.vn/Images/Uploadimages/tour-du-lich-bali-indonesia-gia-re.png" alt="">
+                                </div>
+                                <div class="tour__places-info">
+                                    <h3 class="tour__places-name">Denpasar</h3>
+                                    <div class="tour__places-info-wrap">
+                                        <div class="tour__places-rate">
+                                            <i class="tour__places-rate-icon ti-star"></i>
+                                            <p>6.7 Good</p>
+                                        </div>
+                                        <p class="tour__places-price">$999</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="tour__footer">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/11/h1-img-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End tour section -->
+        
+            <!-- Start discover section -->
+            <div class="content__wrapper discover-section">
+                <div class="discover-section__wrapper">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 m-12">
+                                <div class="content__status">
+                                    <h3 class="content__sub-title white-text">Go & Discover</h3>
+                                    <h1 class="content__main-title white-text">Breathtaking Cities</h1>
+                                    <div class="content__msg">
+                                        <p class="white-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="video-wrap">
+                                    <iframe width="1000" height="480" src="https://www.youtube.com/embed/b42LqqkSY8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid wide">
+                    <div class="discover__features">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="feature-wrapper">
+                                    <div class="feature__img">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-1.png" alt="">
+                                    </div>
+                                    <h3 class="feature__name">Restaurants</h3>
+                                    <p class="feature__msg">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="feature-wrapper">
+                                    <div class="feature__img">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-2.png" alt="">
+                                    </div>
+                                    <h3 class="feature__name">Sightseeing</h3>
+                                    <p class="feature__msg">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="feature-wrapper">
+                                    <div class="feature__img">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-3.png" alt="">
+                                    </div>
+                                    <h3 class="feature__name">Shops & Boutiques</h3>
+                                    <p class="feature__msg">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="feature-wrapper">
+                                    <div class="feature__img">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-4.png" alt="">
+                                    </div>
+                                    <h3 class="feature__name">Where to Stay</h3>
+                                    <p class="feature__msg">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End discover section -->
+        
+            <!-- Start Plan section -->
+            <div class="content__wrapper plan-section">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 c-12">
+                            <div class="content__status">
+                                <h3 class="content__sub-title">Plan The</h3>
+                                <h1 class="content__main-title">Breathtaking Cities</h1>
+                                <div class="content__msg">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="splide2">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-3.jpg" alt="" class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Europe</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name"><h3>Corfu</h3></a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$966</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-1.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Europe</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Vatican</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$860</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-4.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Europe</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Rome</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$2300</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-5.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Europe</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Milan</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$1230</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-2.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Europe</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Seville</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$1500</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-15.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Skiing</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Winter Action</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$960 </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-2.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Skiing</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Magic Of Italy</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$1000</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-16.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Skiing</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Magic Of Italy</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$1000</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-17.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Skiing</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Skiing In Alps</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$450</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-18.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Skiing</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Snow Surfing</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$450</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-19.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Skiing</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Kids Ski School</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$1600</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="plan__wrapper">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-14.jpg" alt=""
+                                            class="plan__img">
+                                        <ul class="plan__time-place">
+                                            <li>
+                                                <i class="plan__time-place-icon ti-calendar"></i>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-user"></i>
+                                                <span>13+</span>
+                                            </li>
+                                            <li>
+                                                <i class="plan__time-place-icon ti-location-pin"></i>
+                                                <span>Skiing</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__main-info">
+                                            <a href="#" class="plan__name">
+                                                <h3>Active Winter</h3>
+                                            </a>
+                                            <p class="plan__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                            <h4 class="plan__cost">$3600</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row">
+                        <div class="col l-12 m-0 c-12">
+                            <div class="plan__direct">
+                                <div class="circle active"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- End Plan Section -->
+
+            <!-- Customer feedback -->
+            <div class="customer-feedback__section">
+                <div class="content__wrapper">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 c-12">
+                                <div class="customer-feedback__wrap">
+                                    <div class="splide3">
+                                        <!-- <div class="splide__arrows">
+                                            <button class="splide__arrow splide__arrow--prev">
+                                                <i class="customer-feedback__icon ti-angle-left"></i>
+                                            </button>
+                                            <button class="splide__arrow splide__arrow--next">
+                                                <i class="customer-feedback__icon ti-angle-right"></i>
+                                            </button>
+                                        </div> -->
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class="customer-feedback__item">
+                                                        <div class="customer__avatar-wrap">
+                                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-testimonial-1.png" alt="">
+                                                        </div>
+                                                    
+                                                        <div class="customer__msg-wrap">
+                                                            <div class="customer__msg">
+                                                                <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget
+                                                                dolor. Aenean massa. Cum sociis the"</p>
+                                                            </div>
+                                                            <p class="customer__signature">Marianna Loreto</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="customer-feedback__item">
+                                                        <div class="customer__avatar-wrap">
+                                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-testimonials-2.png" alt="">
+                                                        </div>
+                                                        
+                                                        <div class="customer__msg-wrap">
+                                                            <div class="customer__msg">
+                                                                <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis"</p>
+                                                            </div>
+                                                            <p class="customer__signature">Marianna Loreto</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Customer feedback -->
+
+            <!-- Start unforgettable section -->
+            <div class="content__wrapper unforgettable__section">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="content__status margin-top-155">
+                                <h3 class="content__sub-title">The Unforgettable</h3>
+                                <h1 class="content__main-title">Mediterranean</h1>
+                                <div class="content__msg">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="unforgettable__item">
+                                <div class="unforgettable__img-wrap">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-30.jpg" alt="">
+                                </div>
+                                <div class="unforgettable__info">
+                                    <h3 class="unforgettable__name">Valencia</h3>
+                                    <h3 class="unforgettable__price">$1990</h3>
+                                </div>
+
+                                <div class="unforgettable__label">
+                                    <p>50% Off</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="unforgettable__item">
+                                <div class="unforgettable__img-wrap">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-31.jpg" alt="">
+                                </div>
+                                <div class="unforgettable__info">
+                                    <h3 class="unforgettable__name">Varadero</h3>
+                                    <h3 class="unforgettable__price">$2300</h3>
+                                </div>
+
+                                <div class="unforgettable__label">
+                                    <p>Specical Offer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="unforgettable__item">
+                                <div class="unforgettable__img-wrap">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-32.jpg" alt="">
+                                </div>
+                                <div class="unforgettable__info">
+                                    <h3 class="unforgettable__name">Italy Tour</h3>
+                                    <h3 class="unforgettable__price">$2560</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End unforgettable section -->
+        
+            <!-- Start review section -->
+            <div class="content__wrapper review__section">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="content__status">
+                                <h3 class="content__sub-title">Read The Top</h3>
+                                <h1 class="content__main-title">Travel Reviews</h1>
+                                <div class="content__msg">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="review__item">
+                                <div class="review__customer-ava">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-7.png" alt="">
+                                </div>
+                                <div class="review__customer-cmt">
+                                    <a class="review__customer-trip-name">Holland Canals</a>
+                                    <div class="review__customer-trip-star">
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                    <p class="review__customer-msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                    <h3 class="review__customer-name">Ema Cooper</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="review__item">
+                                <div class="review__customer-ava">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-4.png" alt="">
+                                </div>
+                                <div class="review__customer-cmt">
+                                    <a class="review__customer-trip-name">Taipei</a>
+                                    <div class="review__customer-trip-star">
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                    <p class="review__customer-msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                    <h3 class="review__customer-name">Susan Day</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="review__item">
+                                <div class="review__customer-ava">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-1.png" alt="">
+                                </div>
+                                <div class="review__customer-cmt">
+                                    <a class="review__customer-trip-name">Beautiful Holland</a>
+                                    <div class="review__customer-trip-star">
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                    <p class="review__customer-msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                    <h3 class="review__customer-name">Carol Silva</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="plan__direct">
+                                <div class="circle active"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End review section -->
+
+            <!-- Start blog section -->
+            <div class="content__wrapper blog__section">
+                <div class="grid wide">
+                    <div class="blog__section-wrap">
+                        <div class="blog__main">
+                            <div class="blog__status">
+                                <h2 class="blog__header">From Our Blog</h2>
+                                <span class="blog__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</span>
+                            </div>
+
+                            <div class="blog__item">
+                                <div class="blog__item-img">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2016/09/blog-img-12.jpg" alt="">
+                                </div>
+                                <div class="blog__item-info">
+                                    <a href="#" class="blog__item-header">Amazing Tour</a>
+                                    <p class="blog__item-msg">Al alit emnos lnipedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia vim. An eam dico similique, ut sint posse sit,</p>
+                                    <div class="blog__item-relavant">
+                                        <a href="#" class="blog__item-date">September 11, 2016</a>
+                                        <div class="blog__item-cmt">
+                                            <i class="blog__item-cmt-icon ti-comment-alt"></i>
+                                            <a href="#">1 Comment</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog__item">
+                                <div class="blog__item-img">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2016/09/blog-img-13.jpg" alt="">
+                                </div>
+                                <div class="blog__item-info">
+                                    <a href="#" class="blog__item-header">Your Vacation</a>
+                                    <p class="blog__item-msg">Al alit emnos lnipedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia vim. An eam dico similique, ut sint posse sit,</p>
+                                    <div class="blog__item-relavant">
+                                        <a href="#" class="blog__item-date">September 11, 2016</a>
+                                        <div class="blog__item-cmt">
+                                            <i class="blog__item-cmt-icon ti-comment-alt"></i>
+                                            <a href="#">1 Comment</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog__section-img">
+                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-banner-img-1.jpg" width="100%" alt="">
+                            
+                            <div class="blog__section-img-flag">
+                                <p class="blog__flag-link">travel.com</p>
+                                <h2 class="blog__flag-content">Sale up to 70%</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End blog section -->
+
+            <!-- Destination Section -->
+            <div class="content__wrapper destination__section">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="content__status margin-top-155">
+                                <h3 class="content__sub-title">Choose Your</h3>
+                                <h1 class="content__main-title">Destination</h1>
+                                <div class="content__msg">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="destination__wrap">
+                                <div class="destination__img">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/destinations-featured-img-4-650x650.jpg" alt="">
+                                </div>
+                                <h2 class="destination__name">Netherlands</h2>
+                                <div class="destination__star">
+                                    <i class="destination__star-icon ti-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="destination__wrap">
+                                <div class="destination__img">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/destinations-featured-img-5-650x650.jpg" alt="">
+                                </div>
+                                <h2 class="destination__name">Greece</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="destination__wrap">
+                                <div class="destination__img">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/destinations-featured-img-6-650x650.jpg" alt="">
+                                </div>
+                                <h2 class="destination__name">Italy</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End destination section -->
+        
+            <!-- Start ready section -->
+            <div class="content__wrapper ready__section margin-bottom-160">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="content__status">
+                                <h3 class="content__sub-title">Get Ready.</h3>
+                                <h1 class="content__main-title">Pack Up and Go</h1>
+                                <div class="content__msg">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-1 c-0">
+                            <div class="ready__direct-wrap">
+                                <i class="ready__section-icon ti-angle-left"></i>
+                            </div>
+                        </div>
+
+                        <div class="col l-10 c-12">
+                            <div class="row">
+                                <div class="col l-4 c-12">
+                                    <div class="ready__stamp-wrap">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-postmark-6.jpg" alt="">
+                                        <div class="ready__stamp-info">
+                                            <h3 class="ready__stamp-name">Japan</h3>
+                                            <div class="ready__stamp-msg">Lorem ipsum dolor sit amet, consectetuer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 c-0">
+                                    <div class="ready__stamp-wrap">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-postmark-7.jpg" alt="">
+                                        <div class="ready__stamp-info">
+                                            <h3 class="ready__stamp-name">England</h3>
+                                            <div class="ready__stamp-msg">Lorem ipsum dolor sit amet, consectetuer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 c-0">
+                                    <div class="ready__stamp-wrap">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-postmark-4.jpg" alt="">
+                                        <div class="ready__stamp-info">
+                                            <h3 class="ready__stamp-name">America</h3>
+                                            <div class="ready__stamp-msg">Lorem ipsum dolor sit amet, consectetuer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-1 c-0">
+                            <div class="ready__direct-wrap">
+                                <i class="ready__section-icon ti-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End ready section -->
+
+            <!-- Subscribe Now -->
+            <div class="content__wrapper subscribe__section">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 c-12">
+                            <div class="subscribe__section-wrap">
+                                <h1 class="subscribe-now__msg">Subscribe Now and Quench Your Wanderlust!</h1>
+                                <button class="subscribe-now__btn">JOIN NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End content -->
+
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__about">
+                            <a href="#" class="footer__about-img">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-footer.png" alt="">
+                            </a>
+                            <p class="footer__desc">Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
+                            <div class="footer__contact">
+                                <a href="#" class="footer__contact-option">
+                                    <i class="footer__contact-option-icon ti-email"></i>
+                                    setsail@qode.com
+                                </a>
+
+                                <a href="#" class="footer__contact-option">
+                                    <i class="footer__contact-option-icon ti-headphone-alt"></i>
+                                    1 562 867 5309
+                                </a>
+
+                                <a href="#" class="footer__contact-option">
+                                    <i class="footer__contact-option-icon ti-location-pin"></i>
+                                    Broadway & Morris St, New York
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__recent-post">
+                            <h3 class="footer__header">Our Recent Posts</h3>
+                            <div class="footer__recent-post-item">
+                                <a href="#" class="footer__msg">Visit Thailand, Bali and China</a>
+                                <a href="#" class="recent-post-item__time">September 7, 2016</a>
+                            </div>
+
+                            <div class="footer__recent-post-item">
+                                <a href="#" class="footer__msg">The Sound Of Our Jungle</a>
+                                <a href="#" class="recent-post-item__time">September 7, 2016</a>
+                            </div>
+
+                            <div class="footer__recent-post-item">
+                                <a href="#" class="footer__msg">New Year, New Resolutions!</a>
+                                <a href="#" class="recent-post-item__time">September 7, 2016</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__subscribe">
+                            <h3 class="footer__header">Subscribe to our Newsletter</h3>
+                            <p class="footer__msg">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</p>
+                            <form action="" id="footer-form">
+                                <div class="footer__form-group">
+                                    <i class="footer__form-group-icon ti-user"></i>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="footer__form-group">
+                                    <i class="footer__form-group-icon ti-email"></i>
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <button class="footer__form-btn">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__social">
+                            <h3 class="footer__header">Our Instagram</h3>
+                            <p class="footer__msg">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__copyrights">
+                    <p>Powered by @ 
+                        <a href="#">Qode Interactive 2018</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.7/dist/js/splide.min.js"></script>
+    <script src="./slider.js"></script>
+</body>
+</html>
+

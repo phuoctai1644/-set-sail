@@ -1,0 +1,210 @@
+/* Tablet and Smartphone */
+@media screen and (max-width: 63.9375em) {
+    .tablet-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: var(--primary-color);
+        width: 100%;
+        height: 69px;
+    }
+    .tablet-header__menu {
+        display: flex;
+        align-items: center;
+        padding: 0 26px;
+        height: 100%;
+        color: var(--white-color);
+        font-size: 1.7rem;
+    }
+    .tablet-header-auth {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        height: 100%;
+    }
+    .header-top__contact,
+    .header-top__auth,
+    .header-navbar {
+        display: none;
+    }
+    .tablet-header__logo img {
+        height: 100%;
+    }
+    .slider__arrow-btn {
+        display: none;
+    }
+    .slider__travel-where,
+    .slider__travel-time {
+        border-bottom: 1px solid rgb(247, 245, 245);
+    }
+    .blog__section-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider__travle-find-btn button {
+        width: 100%;
+        padding: 33px 0;
+    }
+    .feature-wrapper {
+        margin-bottom: 48px;
+    }
+    .destination__wrap {
+        padding-bottom: 24px;
+    }
+    .unforgettable__img-wrap {
+        margin-bottom: 24px;
+    }
+}
+
+/* Tablet: 740px -> 1023px */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .tablet-header__logo {
+        height: 70%;
+    }
+    .slider__find-travel-wrap {
+        flex-direction: column;
+        width: 600px;
+    }
+    .feature__msg {
+        width: 100%;
+    }
+    .review__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review__customer-cmt {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 24px;
+    }
+    .review__customer-msg {
+        text-align: center;
+    }
+    .blog__section-img {
+        width: 92%;
+        padding-top: 60px;
+    }
+    .slider__wrap {
+        height: 630px;
+    }
+    .slider__status {
+        height: 80%;
+        font-size: inherit;
+        justify-content: center;
+    }
+    .slider__sub-title {
+        font-size: 4.8rem;
+    }
+    .slider__main-title {
+        font-size: 7rem;
+    }
+    .slider__msg {
+        font-weight: 1.8rem;
+        padding: 0 24px;
+    }
+} 
+
+/* Smartphone: từ 739px trở xuống */
+@media screen and (max-width: 46.1875em) {
+    .grid.wide {
+        padding: 0 8px;
+    }
+    .tablet-header__logo {
+        height: 60%;
+    }
+    .slider__find-travel-wrap {
+        flex-direction: column;
+    }
+    .video-wrap iframe {
+        width: 300px;
+        height: 150px;
+    } 
+    .blog__section-wrap {
+        align-items: flex-start;
+    }
+    .blog__item {
+        flex-direction: column;
+    }
+    .content__wrapper {
+        padding: 0 24px;
+    }
+    .slider {
+        height: 420px;
+    }
+    .slider__status {
+        margin-top: 8px;
+    }
+    .slider__wrap {
+        align-items: flex-start;
+    }
+    .slider__find-travel {
+        top: -340px;
+    }
+    .slider__msg {
+        padding: 0 24px;
+    }
+    .slider__sub-title,
+    .slider__main-title {
+        font-size: 3.5rem;
+    }
+    .slider__msg {
+        display: none;
+    }
+    .discover-section {
+        padding: 0;
+    }
+    .content__msg {
+        width: 100%;
+    }
+    .content__main-title {
+        font-size: 3.5rem;
+    }
+    .blog__status {
+        width: 100%;
+    }
+    .blog__item-info {
+        padding: 0;
+    }
+    .blog__item-info {
+        width: 100%;
+    }
+    .tour__footer img {
+        width: 100%;
+    }
+    .customer-feedback__icon {
+        display: none;
+    }
+    .blog__section {
+        padding-top: 72px;
+    }
+    .blog__item-info {
+        margin-top: 24px;
+    }
+    .blog__section-img {
+        margin-top: 48px;
+        align-self: center;
+    }
+    .ready__stamp-info {
+        display: flex;
+    }
+    .subscribe__section {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .subscribe__section-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .footer__social,
+    .footer__subscribe,
+    .footer__recent-post {
+        margin-top: 48px;
+    }
+}
