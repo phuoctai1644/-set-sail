@@ -12,6 +12,7 @@
     color: var(--white-color);
     display: flex;
     justify-content: space-between;
+    flex: 1;
     min-width: 1160px;
     padding: 0 20px;
 }
@@ -65,7 +66,6 @@
 /* Header Top Authen */
 .header-top__auth {
     display: flex;
-    flex: 1;        
 }
 
 .default-language {
@@ -146,10 +146,10 @@
 .auth-container {
     background-color: var(--primary-color);
     display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    padding: 0 20px;
 }
 
 .auth-wrap {
@@ -767,6 +767,7 @@
     position: relative;
     top: -36px;
     color: rgb(131, 129, 129);
+    z-index: 10;
 }
 
 .slider__find-travel-wrap {
@@ -1135,12 +1136,16 @@
 
 
 /* Customer Feedback Section */
-.splide__pagination__page.feedback__pagination {
+.splide__pagination.feedback__pagination {
     display: none;
 }
 
-.splide__arrow.splide__arrow-custom {
-    background-color: #fff;
+.splide__arrow.splide__arrow--prev.feedback__arrow-prev {
+    left: -10rem;
+}
+
+.splide__arrow.splide__arrow--next.feedback__arrow-next {
+    right: -10rem;
 }
 
 .customer-feedback__wrap {
@@ -1750,4 +1755,8 @@ a.footer__msg:hover,
 
 .footer__copyrights a:hover {
     color: var(--primary-color);
+}
+
+.splide__arrows--inactived {
+    display: none;
 }

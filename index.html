@@ -436,19 +436,7 @@
 
         <!-- Start slider -->
         <div class="slider">
-            <div class="splide">
-                <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
-                        <div class="slider__arrow-btn">
-                            <i class="slider__arrow-icon ti-angle-left"></i>
-                        </div>
-                    </button>
-                    <button class="splide__arrow splide__arrow--next">
-                        <div class="slider__arrow-btn">
-                            <i class="slider__arrow-icon ti-angle-right"></i>
-                        </div>
-                    </button>
-                </div>
+            <div class="splide" id="splide1">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -480,7 +468,7 @@
             </div>
 
 
-            <!-- Start slider find travel -->
+            <!-- Start find travel -->
             <div class="slider__find-travel">
                 <div class="slider__find-travel-wrap">
                     <div class="slider__travel-where">
@@ -527,8 +515,8 @@
                     </div>
                 </div>
             </div>
-            <!-- End slider find travel -->
-        </div> -->
+            <!-- End find travel -->
+        </div>
         <!-- End Slider -->
 
         <!-- Start content -->
@@ -597,7 +585,7 @@
                         <div class="col l-3 m-12 c-12">
                             <div class="tour__places">
                                 <div class="tour__places-img-wrap">
-                                    <img src="https://image.thanhnien.vn/1024/uploaded/thuthao/2017_01_28/1_tatj.jpg" alt="">
+                                    <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                                 </div>
                                 <div class="tour__places-info">
                                     <h3 class="tour__places-name">Barcelona</h3>
@@ -615,7 +603,7 @@
                         <div class="col l-3 m-12 c-12">
                             <div class="tour__places">
                                 <div class="tour__places-img-wrap">
-                                    <img src="https://www.azamara.com/sites/default/files/heros/kaoshiung-taiwan-1800x1000.jpg" alt="">
+                                    <img src="https://warmcheaptrips.com/wp-content/uploads/2020/05/Lorus-Pond-1127x800.jpg" alt="">
                                 </div>
                                 <div class="tour__places-info">
                                     <h3 class="tour__places-name">Kaohsiung</h3>
@@ -769,7 +757,9 @@
                         <div class="row">
                             <div class="col l-12 m-12 c-12">
                                 <div class="video-wrap">
-                                    <iframe width="1000" height="480" src="https://www.youtube.com/embed/b42LqqkSY8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="1000" height="480" src="https://www.youtube.com/embed/WxtLhgyj6w0" title="YouTube video player"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -839,7 +829,13 @@
                         </div>
                     </div>
 
-                    <div class="splide2">
+                    <div class="splide" id="splide2">
+                        <!-- <div class="splide__arrows splide__arrows--inactived">
+                            <button class="splide__arrow splide__arrow--prev">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                            </button>
+                        </div> -->
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
@@ -1166,16 +1162,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- <div class="row">
-                        <div class="col l-12 m-0 c-12">
-                            <div class="plan__direct">
-                                <div class="circle active"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <!-- End Plan Section -->
@@ -1187,8 +1173,8 @@
                         <div class="row">
                             <div class="col l-12 c-12">
                                 <div class="customer-feedback__wrap">
-                                    <div class="splide3">
-                                        <!-- <div class="splide__arrows">
+                                    <div class="splide" id="splide3">
+                                        <!-- <div class="splide__arrows splide__arrows--inactived">
                                             <button class="splide__arrow splide__arrow--prev">
                                                 <i class="customer-feedback__icon ti-angle-left"></i>
                                             </button>
@@ -1668,7 +1654,11 @@
     </div>
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.7/dist/js/splide.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> -->
+
+    
     <script src="./slider.js"></script>
 </body>
 </html>
-
